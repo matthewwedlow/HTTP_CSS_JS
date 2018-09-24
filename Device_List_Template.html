@@ -1,0 +1,244 @@
+<html>
+<head>
+<title> Devices</title>
+<style>
+
+/* Style the table */
+table {
+    font-family: arial, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 75%;
+    float: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Define Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tab_1')" id="defaultOpen">Tab 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_2')">Tab 2</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_3')">Tab 3</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_4')">Tab 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_5')">Tab 5</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_6')">Tab 6</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab_7')">Tab7</button>
+  
+</div>
+
+<!-- Body of Tab_1 Table -->
+<div id="Tab_1" class="tabcontent">
+  <table>
+<tr>
+    <th>Hostname</th>
+    <th>Location</th> 
+    <th>IP Address</th>
+    <th>Summary</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Address</td> 
+    <td><a href="https:10" target="_blank">Link</a></td>
+    <td>Summary</td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Address</td> 
+    <td><a href="https://10" target="_blank">Link</a></td>
+    <td>Summary</td>
+  </tr>  
+
+</table>
+
+</body>
+</div>
+
+<!-- Body of Tab_2 Table -->
+<div id="Tab_2" class="tabcontent">
+  <table>
+    <tr>
+        <th>Hostname</th>
+        <th>Location</th> 
+        <th>IP Address</th>
+        <th>Summary</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https:10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+  </table>
+</div>
+
+<!-- Body of UTM Table -->
+<div id="Tab_3" class="tabcontent">
+    <table>
+<tr>
+    <th>Hostname</th>
+    <th>Location</th> 
+    <th>IP Address</th>
+    <th>Summary</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Address</td> 
+    <td><a href="https:10" target="_blank">Link</a></td>
+    <td>Summary</td>
+  </tr>
+
+</table>
+</div>
+
+<!-- Body of Palo Table -->
+<div id="Tab_4" class="tabcontent">
+	  <table>
+    <tr>
+        <th>Hostname</th>
+        <th>Location</th> 
+        <th>IP Address</th>
+        <th>Summary</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https:10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+  </table>
+</div>
+
+
+<!-- Body of Contact Table -->
+<div id="Tab_5" class="tabcontent">
+    <table>
+    <tr>
+        <th>Hostname</th>
+        <th>Location</th> 
+        <th>IP Address</th>
+        <th>Summary</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https://10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+  </table>
+  </div>
+
+<!-- Body of Other Table -->
+<div id="Tab_6" class="tabcontent">
+	  <table>
+    <tr>
+        <th>Hostname</th>
+        <th>Location</th> 
+        <th>IP Address</th>
+        <th>Summary</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https://10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+  </table>
+</div>
+
+<!-- Body of F5 Table -->
+<div id="Tab_7" class="tabcontent">
+    <table>
+    <tr>
+        <th>Hostname</th>
+        <th>Location</th> 
+        <th>IP Address</th>
+        <th>Summary</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https://10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Address</td> 
+        <td><a href="https://10" target="_blank">Link</a></td>
+        <td>Summary</td>
+      </tr>
+  </table>
+</div>
+
+
+<!-- Javasript that handles the tabs -->
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and set it as the default tab
+document.getElementById("defaultOpen").click();
+
+</script>
+     
+</body>
+</html> 
+
