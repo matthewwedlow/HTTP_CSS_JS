@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--Created July 2018-->
+
+<html>
+<head>
+ <meta charset='UTF-8'>
+ 
+ <title>TITLE</title>
+  
+ <style>
+/*Style Main Page and Background*/ 
+  * {
+    margin: 0;
+    padding: 0;
+    }
+  body {
+    background: #F5F5F5;  
+    }
+  #page-wrap {
+  width: 1000px; 
+  margin: 50px auto;
+  }
+  
+  .top-bar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+ /*Style Table*/ 
+  table {
+    font-family: arial, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    float: center;
+      }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+          }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+      }
+  tr:nth-child(odd) {
+    background-color: #FFFFFF;
+      }
+
+/*Style Tabs*/ 
+    .tabs {
+      position: relative;  
+      min-height: 325px; /* This part sucks */
+      clear: both;
+      margin: 25px 0;
+    }
+    .tab {
+      float: left;
+    }
+    .tab:hover {
+      cursor: pointer;
+    }
+
+    .tab label {
+      background: #eee; 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      margin-left: -1px; 
+      position: relative;
+      left: 1px; 
+    }
+    .tab:hover label
+    {
+      background: #808080;
+    }
+    
+    .tab [type=radio] {
+      display: none;  
+    }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: #FFFFFF;
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      padding: 5px;
+      border: 1px solid #ccc; 
+    }
+    [type=radio]:checked ~ label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+
+  /*Style Tabs 2*/ 
+    .tabs2 {
+      position: relative;  
+      min-height: 400px; /* This part sucks, Use to adjust content size */
+      clear: both;
+      margin: 25px 0;
+    }
+    .tab {
+      float: left;
+    }
+    .tab:hover {
+      cursor: pointer;
+    }
+
+    .tab label {
+      background: #eee; 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      margin-left: -1px; 
+      position: relative;
+      left: 1px; 
+    }
+    .tab:hover label
+    {
+      background: #808080;
+    }
+    
+    .tab [type=radio] {
+      display: none;  
+    }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: #FFFFFF;
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      padding: 5px;
+      border: 1px solid #ccc; 
+    }
+    [type=radio]:checked ~ label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+    
+ </style>
+
+</head>
+
+
+<body>
+  <div class="top-bar">
+    <h1>MATTS COOL TEMPLATE</h1>
+  </div>
+
+ <div id="page-wrap">
+  <h1>Upper Section</h1>
+    <div class="tabs">
+        
+       <div class="tab">
+           <input type="radio" id="tab-1" name="tab-group-1" checked>
+           <label for="tab-1">Tab 1</label>
+           
+           <div class="content">
+               <table>
+
+                  <tr>
+                      <th>Hostname</th>
+                      <th>IP</th> 
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Hostname</td>
+                      <td>x.x.x.x</td> 
+                      <td>Summary</td>
+                    </tr>
+
+                  </table>
+           </div> 
+       </div>
+             
+        <div class="tab">
+           <input type="radio" id="tab-3" name="tab-group-1">
+           <label for="tab-3">Tab 2</label>
+         
+          <div class="content">
+               <table>
+
+                  <tr>
+                      <th>Hostname</th>
+                      <th>IP</th> 
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Hostname</td>
+                      <td>x.x.x.x</td> 
+                      <td>Summary</td>
+                    </tr>              
+              </table>
+           </div> 
+       </div>
+
+       <div class="tab">
+           <input type="radio" id="tab-7" name="tab-group-1">
+           <label for="tab-7">Tab 3</label>
+         
+           <div class="content">
+               <table>
+
+                  <tr>
+                      <th>Hostname</th>
+                      <th>IP</th> 
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Hostname</td>
+                      <td>x.x.x.x</td> 
+                      <td>Summary</td>
+                    </tr>              
+              </table>
+           </div> 
+       </div>
+        
+    </div>
+    
+    <h1>Lower Section</h1>
+    
+    <div class="tabs2">
+      
+      <div class="tab">
+           <input type="radio" id="tab-8" name="tab-group-2" checked>
+           <label for="tab-8">Tab 1</label>
+         
+           <div class="content">
+            <table>
+
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+       </div>
+        
+       <div class="tab">
+           <input type="radio" id="tab-4" name="tab-group-2">
+           <label for="tab-4">Tab 2</label>
+           
+           <div class="content">
+            <table>
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+       </div>
+
+       <div class="tab">
+           <input type="radio" id="tab-2" name="tab-group-2">
+           <label for="tab-2">Tab 3</label>
+           
+            <div class="content">
+            <table>
+
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+       </div>
+        
+       <div class="tab">
+           <input type="radio" id="tab-5" name="tab-group-2">
+           <label for="tab-5">Tab 4</label>
+           
+           <div class="content">
+            <table>
+
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+       </div>
+        
+        <div class="tab">
+           <input type="radio" id="tab-6" name="tab-group-2">
+           <label for="tab-6">Tab 5</label>
+         
+            <div class="content">
+            <table>
+
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+    </div>
+
+     <div class="tab">
+           <input type="radio" id="tab-9" name="tab-group-2">
+           <label for="tab-9">Tab 6</label>
+         
+           <div class="content">
+            <table>
+
+                  <tr>
+                      <th>Link</th>
+                      <th>Summary</th>
+                    </tr>
+                    <tr>
+                      <td><a href="" target="_blank">Link</a></td>
+                      <td>Summary</td>
+                    </tr>                    
+                </table>
+           </div> 
+       </div>
+ 
+ </div>
+ 
+</body>
+
+</html>
